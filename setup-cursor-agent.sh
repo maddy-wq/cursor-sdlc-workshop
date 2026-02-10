@@ -11,6 +11,9 @@ echo "================================="
 # 1. Install Homebrew if not present
 if ! command -v brew &>/dev/null; then
   echo "📦 Installing Homebrew..."
+  echo ""
+  echo "\033[1;31m⬇️  IF ASKED, TYPE YOUR PASSWORD BELOW (it won't show as you type — that's normal, just type and press Enter)\033[0m"
+  echo ""
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
   # Add brew to PATH for this session (macOS Apple Silicon vs Intel)
